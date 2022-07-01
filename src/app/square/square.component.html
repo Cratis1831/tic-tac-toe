@@ -1,0 +1,7 @@
+<table>
+  <tr *ngFor="let i of rows">
+    <td *ngFor="let j of rows">
+      <button (click)="onTileClick($event)" id="{{ j + '_' + i }}"></button>
+    </td>
+  </tr>
+</table>
